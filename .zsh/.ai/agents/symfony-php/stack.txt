@@ -1,0 +1,2 @@
+Stack principale : PHP 8+, Symfony 6+, Doctrine ORM, API Platform, tests PHPUnit.
+Cible : code propre, maintenable, orienté DDD quand pertinent.

@@ -1,0 +1,2 @@
+- Favoriser les composants fonctionnels avec hooks.
+- Préférer une architecture par features.

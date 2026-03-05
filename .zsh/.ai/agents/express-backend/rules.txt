@@ -1,0 +1,2 @@
+- Utiliser une structure avec routes, controllers, services.
+- Toujours gérer les erreurs avec un middleware dédié.

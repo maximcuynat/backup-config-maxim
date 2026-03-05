@@ -1,0 +1,3 @@
+- Nommer les services en PascalCase.
+- Séparer clairement couche domaine / application / infrastructure quand possible.
+- Préférer l’injection de dépendances via constructeur.
