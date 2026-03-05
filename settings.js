@@ -10,9 +10,11 @@
     "window.titleBarStyle": "custom",
     "window.commandCenter": false,
     "workbench.editor.empty.hint": "hidden",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.closeOnFileDelete": true,
     "breadcrumbs.enabled": true,
     "editor.stickyScroll.enabled": true,
-
+    "telemetry.telemetryLevel": "off",
     // --------------------------------------------------
     // EDITOR CORE
     // --------------------------------------------------
@@ -36,7 +38,36 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.renderLineHighlight": "gutter",
     "editor.guides.highlightActiveIndentation": true,
-
+    "editor.guides.indentation": true,
+    // --------------------------------------------------
+    // VISUEL EXTRA
+    // --------------------------------------------------
+    "editor.selectionHighlight": true,
+    "editor.occurrencesHighlight": "multiFile",
+    "editor.showUnused": true,
+    "editor.scrollbar.verticalScrollbarSize": 6,
+    "editor.scrollbar.horizontalScrollbarSize": 6,
+    "editor.overviewRulerBorder": false,
+    // --------------------------------------------------
+    // INTELLISENSE & AUTOCOMPLÉTION
+    // --------------------------------------------------
+    "editor.suggest.preview": true,
+    "editor.suggest.showStatusBar": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.inlineSuggest.showToolbar": "onHover",
+    "editor.quickSuggestionsDelay": 80,
+    "editor.acceptSuggestionOnEnter": "smart",
+    // --------------------------------------------------
+    // SOURIS & CONFORT
+    // --------------------------------------------------
+    "editor.mouseWheelZoom": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.columnSelection": false,
+    // --------------------------------------------------
+    // PERF GROS FICHIERS
+    // --------------------------------------------------
+    "editor.largeFileOptimizations": true,
+    "editor.maxTokenizationLineLength": 10000,
     // --------------------------------------------------
     // COULEURS & THÈME CUSTOM
     // --------------------------------------------------
@@ -67,24 +98,31 @@
             "textMateRules": [
                 {
                     "scope": "comment",
-                    "settings": { "fontStyle": "italic" }
+                    "settings": {
+                        "fontStyle": "italic"
+                    }
                 },
                 {
                     "scope": "keyword",
-                    "settings": { "fontStyle": "bold" }
+                    "settings": {
+                        "fontStyle": "bold"
+                    }
                 },
                 {
                     "scope": "keyword.control",
-                    "settings": { "fontStyle": "bold italic" }
+                    "settings": {
+                        "fontStyle": "bold italic"
+                    }
                 },
                 {
                     "scope": "storage.type",
-                    "settings": { "fontStyle": "bold" }
+                    "settings": {
+                        "fontStyle": "bold"
+                    }
                 }
             ]
         }
     },
-
     // --------------------------------------------------
     // ZEN MODE
     // --------------------------------------------------
@@ -93,7 +131,6 @@
     "zenMode.fullScreen": false,
     "zenMode.showTabs": "none",
     "zenMode.hideStatusBar": true,
-
     // --------------------------------------------------
     // INDENT RAINBOW (extension: oderwat.indent-rainbow)
     // --------------------------------------------------
@@ -104,7 +141,13 @@
         "rgba(80, 180, 255, 0.07)"
     ],
     "indentRainbow.errorColor": "rgba(255, 50, 50, 0.3)",
-
+    // --------------------------------------------------
+    // ERROR LENS (extension: usernamehw.errorlens)
+    // --------------------------------------------------
+    "errorLens.enabled": true,
+    "errorLens.followCursor": "closestProblem",
+    "errorLens.delay": 300,
+    "errorLens.fontStyleItalic": true,
     // --------------------------------------------------
     // PERFORMANCE (GROS PROJET SYMFONY)
     // --------------------------------------------------
@@ -125,9 +168,10 @@
         "**/node_modules": true,
         "**/vendor/bin": true,
         "**/var/cache": true,
-        "**/var/log": true
+        "**/var/log": true,
+        "**/.phpunit.result.cache": true,
+        "**/.php-cs-fixer.cache": true
     },
-
     // --------------------------------------------------
     // AUTOSAVE & FILE HYGIENE
     // --------------------------------------------------
@@ -137,14 +181,12 @@
     "files.insertFinalNewline": true,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-
     // --------------------------------------------------
     // NAVIGATION
     // --------------------------------------------------
     "workbench.list.smoothScrolling": true,
     "editor.gotoLocation.multipleDefinitions": "peek",
     "editor.gotoLocation.multipleReferences": "peek",
-
     // --------------------------------------------------
     // PHP (INTELEPHENSE UNIQUEMENT)
     // --------------------------------------------------
@@ -169,7 +211,6 @@
             "source.organizeImports": "explicit"
         }
     },
-
     // --------------------------------------------------
     // TWIG
     // --------------------------------------------------
@@ -179,12 +220,10 @@
     },
     "twig-language-2.validation": true,
     "twig-language-2.format.indentSize": 4,
-
     // --------------------------------------------------
     // DOCKER
     // --------------------------------------------------
     "docker.containers.groupBy": "Compose",
-
     // --------------------------------------------------
     // TERMINAL DOCKER SYMFONY
     // --------------------------------------------------
@@ -202,7 +241,6 @@
         }
     },
     "terminal.integrated.defaultProfile.linux": "Symfony",
-
     // --------------------------------------------------
     // GIT
     // --------------------------------------------------
@@ -211,19 +249,16 @@
     "git.autofetch": true,
     "git.autostash": true,
     "git.pruneOnFetch": true,
-
     // --------------------------------------------------
     // DIFF
     // --------------------------------------------------
     "diffEditor.hideUnchangedRegions.enabled": true,
-
     // --------------------------------------------------
     // LOGS
     // --------------------------------------------------
     "files.associations": {
         "*.log": "log"
     },
-
     // --------------------------------------------------
     // AI / EXTENSIONS CONTROL
     // --------------------------------------------------
@@ -234,5 +269,6 @@
     "github.copilot.enable": {
         "*": false
     },
-    "editor.guides.indentation": true
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1"
 }
