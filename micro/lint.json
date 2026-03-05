@@ -1,0 +1,11 @@
+{
+  "php": {
+    "command": "phpstan analyse --no-progress --error-format=raw {filename}",
+    "errorformat": "%f:%l:%c:%m",
+    "rootPatterns": ["composer.json"]
+  },
+  "yaml": {
+    "command": "yamllint {filename}",
+    "errorformat": "%f:%l:%c:%m"
+  }
+}

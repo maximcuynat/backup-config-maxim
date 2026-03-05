@@ -1,0 +1,106 @@
+# ============================================================
+# Starship Prompt - Hacker Green Edition
+# ============================================================
+
+command_timeout = 3000
+
+format = """
+$custom.sysinfo
+$directory$git_branch$git_status$docker_context$php$env_var$cmd_duration$jobs
+$character
+"""
+
+add_newline = true
+
+# ------------------------------------------------------------
+# Directory — cyan vif, info principale
+# ------------------------------------------------------------
+[directory]
+truncate_to_repo = false
+style = "bold cyan"
+read_only_style = "bold red"
+truncation_length = 4
+truncation_symbol = ".../"
+
+# ------------------------------------------------------------
+# Git branch — vert, distinct du path
+# ------------------------------------------------------------
+[git_branch]
+symbol = "git:"
+format = "[$symbol$branch]($style) "
+style = "bold green"
+
+# ------------------------------------------------------------
+# Git status — jaune, signale un état à traiter
+# ------------------------------------------------------------
+[git_status]
+format = '([\[$modified$staged$untracked$conflicted$ahead_behind\]]($style) )'
+modified = "+ "
+staged = "* "
+untracked = "? "
+conflicted = "! "
+ahead = "↑"
+behind = "↓"
+diverged = "↕"
+style = "bold yellow"
+
+# ------------------------------------------------------------
+# Docker — bleu, contexte infra
+# ------------------------------------------------------------
+[docker_context]
+symbol = "docker:"
+format = "[$symbol$context]($style) "
+style = "bold blue"
+only_with_files = true
+
+# ------------------------------------------------------------
+# PHP — magenta, info runtime
+# ------------------------------------------------------------
+[php]
+symbol = "php:"
+format = "[$symbol$version]($style) "
+style = "fg:#FF79C6 bold"
+
+# ------------------------------------------------------------
+# Symfony ENV — jaune vif
+# ------------------------------------------------------------
+[env_var.APP_ENV]
+symbol = "env:"
+format = "[$symbol$env_value]($style) "
+style = "bold yellow"
+
+# ------------------------------------------------------------
+# Command duration — gris discret
+# ------------------------------------------------------------
+[cmd_duration]
+min_time = 500
+format = "time:[$duration]($style) "
+style = "bright-black"
+show_notifications = false
+min_time_to_notify = 10_000
+
+# ------------------------------------------------------------
+# Background jobs — rouge, process en attente
+# ------------------------------------------------------------
+[jobs]
+symbol = "jobs:"
+format = "[$symbol$number]($style) "
+style = "bold red"
+number_threshold = 1
+
+# ------------------------------------------------------------
+# System info — ligne dédiée au dessus
+# ------------------------------------------------------------
+[custom.sysinfo]
+command = "~/.local/bin/starship_sysinfo.sh"
+when = "[ -x ~/.local/bin/starship_sysinfo.sh ]"
+format = "[($output) ]($style)"
+style = "bright-black"
+
+# ------------------------------------------------------------
+# Prompt symbol
+# ------------------------------------------------------------
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[>](bold red)"
+vimcmd_symbol = "[<](bold yellow)"

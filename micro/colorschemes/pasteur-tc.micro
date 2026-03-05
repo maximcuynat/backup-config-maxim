@@ -1,0 +1,86 @@
+# Pasteur Theme - TrueColor (PRO)
+# Optimized for PHP / Symfony / Docker
+# Soft contrast, long-session friendly
+
+# Base
+color-link default          "#dcd7ba,#1e1e28"
+color-link comment          "#6e6a86"
+color-link comment.bright  "#908caa"
+
+# Identifiers
+color-link identifier       "#c0caf5"
+color-link identifier.var   "#e0af68"
+color-link identifier.class "#7aa2f7"
+
+# Constants
+color-link constant         "#9ece6a"
+color-link constant.string  "#98c379"
+color-link constant.number  "#ff9e64"
+color-link constant.bool.true  "#f7768e"
+color-link constant.bool.false "#7dcfff"
+
+# Statements & types
+color-link statement        "bold #ff9e64"
+color-link type             "#7aa2f7"
+color-link type.keyword     "bold #7aa2f7"
+
+# Symbols
+color-link symbol           "#89ddff"
+color-link symbol.operator  "#89ddff"
+color-link symbol.brackets  "#c0caf5"
+color-link symbol.tag       "#f7768e"
+
+# Preproc
+color-link preproc          "#bb9af7"
+color-link preproc.shebang  "bold #bb9af7"
+
+# Specials
+color-link special          "#7dcfff"
+color-link underlined       "underline #7dcfff"
+
+# UI states
+color-link todo             "bold #e0af68,#2a2a37"
+color-link error            "bold #f7768e"
+
+color-link selection        "#ffffff,#33467c"
+
+# Status line
+color-link statusline       "#dcd7ba,#2a2a37"
+color-link statusline.inactive "#6e6a86,#1e1e28"
+color-link statusline.suggestions "#1e1e28,#7aa2f7"
+
+# Tab bar
+color-link tabbar           "#6e6a86,#1e1e28"
+color-link tabbar.active    "bold #dcd7ba,#2a2a37"
+
+# Line numbers
+color-link line-number      "#565f89"
+color-link current-line-number "bold #7aa2f7"
+
+# Indent guides
+color-link indent-char      "#3b4261"
+
+# Gutters
+color-link gutter-info      "#7dcfff"
+color-link gutter-warning   "#e0af68"
+color-link gutter-error     "#f7768e"
+
+# Diff
+color-link diff-added       "#9ece6a"
+color-link diff-modified    "#e0af68"
+color-link diff-deleted     "#f7768e"
+
+# Cursor + guide
+color-link cursor-line      ",#2a2f42"
+color-link color-column     ",#2a2f42"
+
+# Messages
+color-link message          "#7dcfff"
+color-link error-message    "bold #f7768e"
+
+# Matching + search
+color-link match-brace      "bold #000000,#7aa2f7"
+color-link hlsearch         "#1e1e28,#7dcfff"
+
+# Errors
+color-link tab-error        "#000000,#f7768e"

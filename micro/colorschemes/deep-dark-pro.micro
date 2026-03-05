@@ -1,0 +1,86 @@
+# Deep Dark Pro — Micro Theme (FINAL)
+# Ultra dark • no glare • long-session comfort
+# PHP / Symfony / Docker optimized
+
+# Base
+color-link default          "#cdd6f4,#0b0f14"
+color-link comment          "#6c7086"
+color-link comment.bright  "#7f849c"
+
+# Identifiers
+color-link identifier       "#cdd6f4"
+color-link identifier.var   "#f9e2af"
+color-link identifier.class "#89b4fa"
+
+# Constants
+color-link constant         "#a6e3a1"
+color-link constant.string  "#94e2d5"
+color-link constant.number  "#fab387"
+color-link constant.bool.true  "#f38ba8"
+color-link constant.bool.false "#74c7ec"
+
+# Statements & types
+color-link statement        "bold #fab387"
+color-link type             "#89b4fa"
+color-link type.keyword     "bold #89b4fa"
+
+# Symbols
+color-link symbol           "#74c7ec"
+color-link symbol.operator  "#74c7ec"
+color-link symbol.brackets  "#cdd6f4"
+color-link symbol.tag       "#f38ba8"
+
+# Preproc
+color-link preproc          "#cba6f7"
+color-link preproc.shebang  "bold #cba6f7"
+
+# Specials
+color-link special          "#74c7ec"
+color-link underlined       "underline #74c7ec"
+
+# UI states
+color-link todo             "bold #f9e2af,#131821"
+color-link error            "bold #f38ba8"
+
+color-link selection        "#ffffff,#1e2433"
+
+# Status line
+color-link statusline       "#cdd6f4,#131821"
+color-link statusline.inactive "#6c7086,#0b0f14"
+color-link statusline.suggestions "#0b0f14,#89b4fa"
+
+# Tab bar
+color-link tabbar           "#6c7086,#0b0f14"
+color-link tabbar.active    "bold #cdd6f4,#131821"
+
+# Line numbers
+color-link line-number      "#45475a"
+color-link current-line-number "bold #89b4fa"
+
+# Indent guides
+color-link indent-char      "#2a2f3a"
+
+# Gutters
+color-link gutter-info      "#74c7ec"
+color-link gutter-warning   "#f9e2af"
+color-link gutter-error     "#f38ba8"
+
+# Diff
+color-link diff-added       "#a6e3a1"
+color-link diff-modified    "#f9e2af"
+color-link diff-deleted     "#f38ba8"
+
+# Messages
+color-link message          "#74c7ec"
+color-link error-message    "bold #f38ba8"
+
+# Matching + search
+color-link match-brace      "bold #000000,#89b4fa"
+color-link hlsearch         "#0b0f14,#74c7ec"
+
+# Errors
+color-link tab-error        "#000000,#f38ba8"
+
+# Twig
+color-link preproc          "#cba6f7"
+

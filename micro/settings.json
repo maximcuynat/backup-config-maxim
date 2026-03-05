@@ -1,0 +1,31 @@
+{
+    // Sauvegarde & fichiers
+    "autosave": 5,
+    "mkparents": true,
+
+    // Affichage
+    "colorscheme": "deep-dark-pro",
+    "colorcolumn": 100,
+    "scrollbar": true,
+    "softwrap": true,
+    "cursorline": true,
+    "ruler": true,
+
+    // Edition
+    "tabstospaces": true,
+    "tabsize": 4,
+    "smartindent": true,
+
+    // Recherche
+    "hlsearch": true,
+    "ignorecase": true,
+    "smartcase": true,
+
+    // Confort terminal
+    "clipboard": "terminal",
+    "mouse": true,
+    "autoswitchbuf": true,
+
+    // Git diff
+    "diffgutter": true
+}
